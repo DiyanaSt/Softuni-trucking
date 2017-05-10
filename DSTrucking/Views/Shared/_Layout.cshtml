@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="icon"
+          type="image/jpg"
+          href="~/Content/img/DSSignbezgrad.jpg">
+   
+    <title>DS Logistics</title>
+    <meta name="keywords" content="contact, DS, dslogistics,DS Logistics, DS Logistic, ds logistics, truckin company, transportation, transport, logistics, trucks, truck, chicago, usa">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Stylesheets -->
+    <link href="~/Content/masterslider/skins/style.css" rel="stylesheet" />
+    <link href="~/Content/masterslider/style/masterslider.css" rel="stylesheet" />
+    <link href="~/Content/icon-fonts/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/owl-carousel/owl.carousel.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-datepicker/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="~/Content/Gridmvc.css" rel="stylesheet" />
+    <!-- Google Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,800,700,600' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.matchHeight-min.js"></script>
+    <script src="~/Scripts/jquery.srcipts.min.js"></script>
+
+    <script src="~/Scripts/jquery.dlmenu.min.js"></script>
+    <script src="~/Scripts/masterslider/masterslider.min.js"></script>
+    <script src="~/Scripts/owl-carousel/owl.carousel.min.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+    <script src="~/Scripts/bootstrap-filestyle.min.js"></script>
+
+
+    <script src="~/Scripts/include.js"></script>
+
+</head>
+
+<body>
+    @RenderPage("~/Views/Shared/_Header.cshtml")
+    <div class="margin-top-0">
+        @RenderBody()
+        @RenderPage("~/Views/Shared/_Footer.cshtml")
+
+    </div>
+
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/custom-file-input.js"></script>
+</body>
+</html>
+

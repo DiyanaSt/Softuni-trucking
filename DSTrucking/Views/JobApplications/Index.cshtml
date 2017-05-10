@@ -1,0 +1,149 @@
+﻿@model IEnumerable<DSTrucking.Models.JobApplicationViewModel>
+@using GridMvc.Html
+
+@{
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+}
+<div class="page-title-style01 page-title-negative-top pt-bkg15">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Job Applications</h1>
+
+            </div><!-- .col-md-12 end -->
+        </div><!-- .row end -->
+    </div><!-- .container end -->
+</div><!-- .page-title-style01.page-title-negative-top end -->
+    <div class="container job-application-wrapper-table margin-bottom-40">
+      
+        <div class="row">
+
+            <div class="col-xs-12">
+                @Html.Grid(Model).Columns(columns =>
+           {
+
+           columns.Add(c => c.JobPossition).Titled("Position").Filterable(true);
+           columns.Add(c => c.User.FullName).Titled("Name").Filterable(true);
+           columns.Add(c => c.User.Email).Titled("Email");
+           columns.Add(c => c.User.Telephone).Titled("Telephone");
+           columns.Add(c => c.AmountOfOTRExperience.TimePeriod).Titled("Amount of experience").Filterable(true);
+           columns.Add(c => c.File).Titled("CV").Encoded(false).Sanitized(false);
+           columns.Add()
+                   .Encoded(false)
+                   .Sanitized(false)
+                   .RenderValueAs(o => Html.ActionLink("Details", "Details", new { id = o.Id })).SetWidth(30);
+           columns.Add()
+                    .RenderValueAs(o => Html.Raw($"<a href='#' type='button' id='deleteItem' class='deleteItem' data-toggle='modal' data-target='#confirm-delete' data-id='{o.Id}'>Delete</a>"))
+
+                         .Encoded(false)
+                       .Sanitized(false).SetWidth(30);
+
+                }).WithPaging(10).Sortable(true)
+
+
+
+                </div>
+        </div>
+    </div>
+
+    <script>
+        debugger;
+       
+        function confirm(heading, question, cancelButtonTxt, okButtonTxt, id) {
+            debugger;
+            var confirmModal =
+              $('<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">' +
+                '<div class="modal-dialog"  role="document"><div class="modal-content">' +
+                  '<div class="modal-header">' +
+                    '<a class="close" data-dismiss="modal" >&times;</a>' +
+                    '<h3>' + heading + '</h3>' +
+                  '</div>' +
+
+                  '<div class="modal-body">' +
+                    '<p>' + question + '</p>' +
+                  '</div>' +
+
+                  '<div class="modal-footer">' +
+                    '<a href="#" class="wpcf7-submit" data-dismiss="modal">' +
+                      cancelButtonTxt +
+                    '</a>' +
+                    '<a href="javascript:void(0)" id="okButton" class="wpcf7-submit">' +
+                      okButtonTxt +
+                    '</a>' +
+                  '</div>' +
+                   '</div>' +
+                    '</div>' +
+                '</div>');
+
+            confirmModal.find('#okButton').click(function (event) {
+                debugger;
+             
+                $.ajax({
+                    type: "POST",
+                    url: "/JobApplications/DeleteConfirmed",
+                    data: {
+                        id: id
+                    },
+                    success: function (result) {
+                        debugger;
+                        if (result == "OK") {
+                            confirmModal.modal('hide');
+                            window.location.href = "/jobapplications"
+                        }
+
+                    }
+                });
+             
+               
+            });
+
+            confirmModal.modal('show');
+            confirmModal.children().first().css('z-index', '0');
+        };
+
+        // ---------------------------------------------------------- Confirm Put To Use
+
+        $(".deleteItem").on("click", function (event) {
+            // get txn id from current table row
+            var id = $(this).data('id');
+
+            var heading = 'Confirm Delete';
+            var question = 'Please confirm that you wish to delete record ' + id + '.';
+            var cancelButtonTxt = 'Cancel';
+            var okButtonTxt = 'Confirm';
+
+         
+
+            confirm(heading, question, cancelButtonTxt, okButtonTxt, id);
+
+        });
+    </script>
+<style>
+    .wpcf7-submit{
+      padding: 8px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 25px;
+    color: #fff;
+    background-color: #006db7;
+    margin-right: 5px;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+</style>

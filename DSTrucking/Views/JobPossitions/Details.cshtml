@@ -1,0 +1,75 @@
+﻿@model DSTrucking.Models.JobPossitionViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="container job-application-wrapper-table margin-bottom-40">
+
+    <div class="row margin-top-160">
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+               
+                        <h4>JobPossition details</h4>
+                        <hr />
+                        <dl class="dl-horizontal">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Name)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Name)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Description)
+                            </dt>
+
+                            <dd>
+                                @Html.Raw(HttpUtility.HtmlDecode(Model.Description))
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.FromDate)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.FromDate)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.ToDate)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.ToDate)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.OpenedPositions)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.OpenedPositions)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.City)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.City)
+                            </dd>
+
+                        </dl>
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+                        @Html.ActionLink("Back to List", "Index")
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

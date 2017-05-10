@@ -1,0 +1,460 @@
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\csc.exe
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\System.Collections.Immutable.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\vbc.exe
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe.config
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\DSTrucking.dll.config
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\DSTrucking.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\DSTrucking.pdb
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\AutoMapper.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\EntityFramework.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Web.Infrastructure.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Owin.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.Razor.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\WebGrease.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\AutoMapper.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.Razor.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.pdb
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\EntityFramework.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.Create.resources
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddTypeToJobAppl.resources
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csproj.GenerateResource.Cache
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.dll
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.pdb
+c:\users\didi\documents\visual studio 2015\Projects\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csprojResolveAssemblyReference.cache
+C:\Users\Didi\Documents\Visual Studio 2015\Projects\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedTableFile.resources
+C:\Users\Didi\Documents\Visual Studio 2015\Projects\TruckingWebsite\DSTrucking\bin\DocumentFormat.OpenXml.dll
+C:\Users\Didi\Documents\Visual Studio 2015\Projects\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedJobApplicationFile.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csprojResolveAssemblyReference.cache
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.Create.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddDateAvailableToStart.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csproj.GenerateResource.Cache
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\csc.exe
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\vbc.exe
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.dll.config
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.pdb
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\AutoMapper.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\DocumentFormat.OpenXml.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Owin.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Razor.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\WebGrease.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\AutoMapper.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Razor.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.pdb
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.pdb
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedCreatedOn.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddCandidateCvImage.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\DocX.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.Update.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.pdb
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.Core.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.SqlServer.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.Core.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.SqlServer.xml
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\es\Hangfire.Core.resources.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\bin\zh\Hangfire.Core.resources.dll
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedNewsLetterEmail.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedJobPossition.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedCreatedOnInJobPossitions.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedStateId.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedIsActive.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddPhotos.resources
+C:\Users\Didi\Desktop\test\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddTruckInfo.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\csc.exe
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\vbc.exe
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.dll.config
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.pdb
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\AutoMapper.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\DocumentFormat.OpenXml.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\DocX.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.Core.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.SqlServer.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Owin.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Razor.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\WebGrease.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\AutoMapper.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.Core.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.SqlServer.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.pdb
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Razor.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.pdb
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\es\Hangfire.Core.resources.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\zh\Hangfire.Core.resources.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csprojResolveAssemblyReference.cache
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.Create.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddDateAvailableToStart.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedCreatedOn.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddCandidateCvImage.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.Update.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedNewsLetterEmail.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedJobPossition.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedCreatedOnInJobPossitions.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedStateId.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedIsActive.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddPhotos.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddTruckInfo.resources
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csproj.GenerateResource.Cache
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.dll
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.pdb
+C:\Users\Didi\Desktop\test3\truck_system\TruckingWebsite\DSTrucking\bin\GridMvc.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\csc.exe
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\vbc.exe
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.dll.config
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.pdb
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\AutoMapper.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DocumentFormat.OpenXml.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DocX.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\GridMvc.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.Core.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.SqlServer.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Owin.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Razor.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\WebGrease.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\AutoMapper.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.Core.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.SqlServer.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.pdb
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Razor.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.pdb
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\es\Hangfire.Core.resources.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\zh\Hangfire.Core.resources.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csprojResolveAssemblyReference.cache
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.Create.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddDateAvailableToStart.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedCreatedOn.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddCandidateCvImage.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.Update.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedNewsLetterEmail.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedJobPossition.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedCreatedOnInJobPossitions.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedStateId.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedIsActive.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddPhotos.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddTruckInfo.resources
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csproj.GenerateResource.Cache
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.dll
+C:\Users\Didi\Desktop\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.pdb
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\csc.exe
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\System.Collections.Immutable.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\System.Reflection.Metadata.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\vbc.exe
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\roslyn\VBCSCompiler.exe.config
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.dll.config
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DSTrucking.pdb
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\AutoMapper.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DocumentFormat.OpenXml.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\DocX.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\GridMvc.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.Core.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.SqlServer.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Web.Infrastructure.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Owin.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Razor.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\WebGrease.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\AutoMapper.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.Core.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Hangfire.SqlServer.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Newtonsoft.Json.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.pdb
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\SendGrid.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Helpers.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Mvc.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Optimization.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.Razor.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Deployment.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\System.Web.WebPages.Razor.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Antlr3.Runtime.pdb
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\EntityFramework.SqlServer.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Core.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Facebook.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Cookies.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.OAuth.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Google.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.Twitter.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\es\Hangfire.Core.resources.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\bin\zh\Hangfire.Core.resources.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csprojResolveAssemblyReference.cache
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.Create.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddDateAvailableToStart.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedCreatedOn.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddCandidateCvImage.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.Update.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedNewsLetterEmail.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedJobPossition.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedCreatedOnInJobPossitions.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedStateId.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddedIsActive.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddPhotos.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.Migrations.AddTruckInfo.resources
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.csproj.GenerateResource.Cache
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.dll
+D:\desc\softuni-project\truck_system\TruckingWebsite\DSTrucking\obj\Debug\DSTrucking.pdb

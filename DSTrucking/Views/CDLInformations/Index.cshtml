@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DSTrucking.DAL.Entities.CDLInformation>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CDLState.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CDLNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CDLSchoolAttended)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GraduationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PreviousCDL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PreviousCDLNumber)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CDLState.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CDLNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CDLSchoolAttended)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GraduationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PreviousCDL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PreviousCDLNumber)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

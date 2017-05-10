@@ -1,0 +1,67 @@
+﻿@model DSTrucking.DAL.Entities.CDLInformation
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CDLInformation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CDLState.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CDLState.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CDLNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CDLNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CDLSchoolAttended)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CDLSchoolAttended)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GraduationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GraduationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreviousCDL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreviousCDL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreviousCDLNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreviousCDLNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

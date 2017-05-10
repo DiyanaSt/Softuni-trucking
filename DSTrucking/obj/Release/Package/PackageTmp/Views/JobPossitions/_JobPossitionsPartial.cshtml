@@ -1,0 +1,42 @@
+﻿@model IEnumerable<DSTrucking.Models.JobPossitionViewModel>
+
+<div class="custom-heading">
+    <h3>opened positions</h3>
+</div><!-- .custom-heading end -->
+<div class="accordion careers">
+    @{
+        var classActive = string.Empty;
+        var count = 0;
+        var firstCount = 1;
+    }
+    @foreach (var possition in Model)
+    {
+        count++;
+        if (firstCount == count)
+        {
+            classActive = "active";
+        }
+
+        <div class="title @classActive">
+            <a href='#' class="clearfix">
+                <span class='job-position'>@possition.Name</span>
+                <span class='job-place'>@possition.City</span>
+                <span class='job-end-date'>END DATE: @possition.ToDate.GetValueOrDefault()</span>
+            </a>
+        </div><!-- .title end -->
+        <div class="content clearfix">
+            <h4>Job summary</h4>
+            <p>
+                @possition.Description
+            </p>
+            <br />
+            <a class="btn btn-big" href="/jobapplications/create">
+                <span>
+                    Apply for this job
+                </span>
+            </a>
+        </div><!-- .content end -->
+    }
+
+
+</div><!-- .accordion.careers end -->

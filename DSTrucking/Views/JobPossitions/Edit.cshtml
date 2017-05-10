@@ -1,0 +1,225 @@
+﻿@model DSTrucking.Models.JobPossitionViewModel
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="page-title-style01 page-title-negative-top pt-bkg15">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Edit possition</h1>
+
+            </div><!-- .col-md-12 end -->
+        </div><!-- .row end -->
+    </div><!-- .container end -->
+</div><!-- .page-title-style01.page-title-negative-top end -->
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="wpcf7 driver-app-form clearfix">
+                    <!--  <h4>JobApplication</h4>
+                      <hr />-->
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <fieldset>
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                    </fieldset>
+                    <fieldset>
+                        @Html.LabelFor(model => model.FromDate)
+                        <div class="input-group-date date datepicker pointer">
+                            @Html.EditorFor(model => model.FromDate, new { htmlAttributes = new { @class = "wpcf7-text", @placeholder = "Please choose date" } })
+                            <span class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.FromDate, "", new { @class = "bg-danger" })
+                    </fieldset>
+                    <fieldset>
+                        @Html.LabelFor(model => model.ToDate)
+                        <div class="input-group-date date datepicker pointer">
+                            @Html.EditorFor(model => model.ToDate, new { htmlAttributes = new { @class = "wpcf7-text", @placeholder = "Please choose date" } })
+                            <span class="input-group-addon">
+                                <span class="fa fa-calendar"></span>
+                            </span>
+                        </div>
+                        @Html.ValidationMessageFor(model => model.ToDate, "", new { @class = "bg-danger" })
+                    </fieldset>
+                    <fieldset style="width:100% !important">
+                        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+
+                    </fieldset>
+
+
+
+
+
+                    <fieldset>
+                        @Html.LabelFor(model => model.OpenedPositions, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.OpenedPositions, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.OpenedPositions, "", new { @class = "text-danger" })
+
+                    </fieldset>
+                    <fieldset>
+                        @Html.LabelFor(model => model.StateId, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.DropDownListFor(model => model.StateId, (SelectList)ViewBag.StateId, new { @class = "wpcf7-select" })
+                        @Html.ValidationMessageFor(model => model.StateId, "", new { @class = "text-danger" })
+                    </fieldset>
+
+
+                    <fieldset>
+                        @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                    </fieldset>
+                    <fieldset>
+                        <div class="row row-reset row-eq-height">
+                            <div class='col-xs-11 col-reset'>
+                                <div class="border-left border-top border-bottom">
+                                    <div class="padding-all-7 ">
+                                        <span>IsActive</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-reset">
+                                <div>
+                                    <div class="border-right border-top border-bottom">
+                                        <ul class="filters margin-top-10 margin-bottom-6 height-20">
+                                            <li>
+                                                <label>
+                                                    <input type="checkbox"
+                                                           name="IsActive"
+                                                           value="@Model.IsActive.GetValueOrDefault()"
+                                                           @(Html.Raw(Model.IsActive.GetValueOrDefault() ? "checked=\"checked\"" : "")) />
+                                                    <span class="icon"><i class="fa fa-check"></i></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                   
+                </div>
+                <div class="wpcf7 driver-app-form clearfix margin-bottom-20">
+                    <input type="submit" value="Create" class="wpcf7-submit" style="margin-right:5px;" />
+
+                    <a href='#' type='button' id='viewItem' class='viewItem wpcf7-submit' style="margin-right:5px;" data-toggle='modal' data-target='#view-record'>View</a>
+                    <a href='/jobpossitions' type='button' class='wpcf7-submit' style="margin-right:5px;">Back to list</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<script>
+    function confirm(heading, question, cancelButtonTxt) {
+
+        var confirmModal =
+          $('<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">' +
+            '<div class="modal-dialog"  role="document"><div class="modal-content">' +
+              '<div class="modal-header">' +
+                '<a class="close" data-dismiss="modal" >&times;</a>' +
+                '<h3>' + heading + '</h3>' +
+              '</div>' +
+
+              '<div class="modal-body">' +
+                '<p>' + question + '</p>' +
+              '</div>' +
+
+              '<div class="modal-footer">' +
+                '<a href="#" class="wpcf7-submit" data-dismiss="modal">' +
+                  cancelButtonTxt +
+                '</a>' +
+
+              '</div>' +
+               '</div>' +
+                '</div>' +
+            '</div>');
+
+        //confirmModal.find('#okButton').click(function (event) {
+
+
+        //    $.ajax({
+        //        type: "POST",
+        //        url: "/JobPossitions/DeleteConfirmed",
+        //        data: {
+        //            id: id
+        //        },
+        //        success: function (result) {
+
+        //            if (result == "OK") {
+        //                confirmModal.modal('hide');
+        //                window.location.href = "/jobpossitions"
+        //            }
+
+        //        }
+        //    });
+
+
+        //});
+
+        confirmModal.modal('show');
+        confirmModal.children().first().css('z-index', '0');
+    };
+
+    // ---------------------------------------------------------- Confirm Put To Use
+
+    $(".viewItem").on("click", function (event) {
+        debugger;
+        // get txn id from current table row
+        var name = $('#Name').val();
+        var toDate = $('#ToDate').val();
+        var city = $('#City').val();
+        var description = tinyMCE.activeEditor.getContent({ format: 'raw' });;
+
+        var heading = 'View';
+        var modalContent = '<div class="accordion careers"> <div class="title active">' +
+                                '<a href="#" class="clearfix">'+
+                                    '<span class="job-position">'+name+',</span>' +
+                                    '<span class="job-place">'+city+',</span>' +
+                                    '<span class="job-end-date">END DATE: '+toDate+'</span>'+
+                                '</a></div><div class="content clearfix"><h4>Job summary</h4><p>'+description+'</p></div></div>';
+        var cancelButtonTxt = 'Cancel';
+
+
+
+        confirm(heading, modalContent, cancelButtonTxt);
+
+    });
+
+    $('.datepicker').datepicker({
+        autoclose: true,
+        todayHighlight: true,
+        format: "dd-MM-yyyy"
+    });
+</script>
+<style>
+    .input-group-date {
+        display: table;
+    }
+
+    .datepicker {
+        padding: 0 !important;
+    }
+
+    .input-group-date input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+</style>

@@ -1,0 +1,492 @@
+﻿@model DSTrucking.Models.JobApplicationViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var stateList = ViewBag.StateId as List<SelectListItem>;
+}
+
+<div class="page-title-style01 page-title-negative-top pt-bkg15">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Drivers and Owner Operators - Apply Now!</h1>
+            </div><!-- .col-md-12 end -->
+        </div><!-- .row end -->
+    </div><!-- .container end -->
+</div><!-- .page-title-style01.page-title-negative-top end -->
+
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            @if (TempData["isSuccessfull"] != null)
+            {
+                <div class="successMessage alert alert-success">
+                    <a href="#" class="close" data-dismiss="alert">×</a><strong>Success!</strong> Your application has been sent successfully.
+                </div>
+            }
+            <aside class="col-md-3 aside aside-left">
+                <ul class="aside-widgets">
+                    <li class="widget widget_nav_menu clearfix">
+                        <div class="title">
+                            <h3>DRIVER REQUIREMENTS</h3>
+                        </div>
+                       
+                        <ul class="menu">
+                            <li class="menu-item">
+                                Minimum age of 24 years. 
+                            </li>
+
+                            <li class="menu-item">
+                                Must have 2 year of verifiable over the road experience.
+                            </li>
+
+                            <li class="menu-item">
+                                Must possess a valid CDL from the state of residence. 
+                            </li>
+
+                            <li class="menu-item">
+                                No more than 3 moving violations in the past 3 years. 
+                            </li>
+
+                            <li class="menu-item">
+                                Must complete satisfactory D.O.T. physical and drug tests. 
+                            </li>
+
+                            <li class="menu-item">
+                                No DUI's or DWI's accepted. 
+                            </li>
+
+                            <li class="menu-item">
+                                No felony convictions. 
+                            </li>
+                        </ul><!-- .menu end -->
+
+                         <div class="title margin-top-20">
+                            <h3>OWNER-OPERATOR REQUIREMENTS</h3>
+                        </div>
+
+                        <ul class="menu">
+                            <li class="menu-item">
+                               Minimum age of 24 years.
+                            </li>
+
+                            <li class="menu-item">
+                                Must have 2 year of verifiable over the road experience.
+                            </li>
+
+                            <li class="menu-item">
+                                Must possess a valid CDL from the state of residence. 
+                            </li>
+
+                            <li class="menu-item">
+                                No more than 3 moving violations in the past 3 years. 
+                            </li>
+
+                            <li class="menu-item">
+                                Must complete satisfactory D.O.T. physical and drug tests. 
+                            </li>
+
+                            <li class="menu-item">
+                                No DUI's or DWI's accepted. 
+                            </li>
+
+                            <li class="menu-item">
+                                Trucks must pass DOT inspection 
+                            </li>
+
+                            <li class="menu-item">
+                                Must have truck title and annual vehicle registration
+                            </li>
+
+                            <li class="menu-item">
+                                No felony convictions
+                            </li>
+                        </ul><!-- .menu end -->
+                    </li><!-- .widget.widget_nav_menu end -->
+
+                </ul><!-- .aside-widgets end -->
+            </aside><!-- .aside.aside-left end -->
+            
+            <div class="col-md-9">
+                <div class="custom-heading">
+                    <h2>want to become part of our team?</h2>
+                </div>
+
+                <img class="float-right" src="~/Content/img/pics/img25.jpg" width="360" alt=""/>
+                
+                <p>
+                    I throw myself down among the tall grass by the 
+                    trickling stream; and, as I lie close to the earth,
+                    a thousand unknown plants are noticed by me: when I 
+                    hear the buzz of the little world among the stalks, 
+                    and grow familiar with the countless indescribable 
+                    forms of the insects and flies, then I feel the 
+                    presence of the Almighty, who formed us in his own 
+                    image, and the breath.
+                    On the other hand, we denounce with righteous
+                    indignation and dislike men who are so beguiled and 
+                    demoralized by the charms of pleasure of the moment, 
+                    so blinded by desire, that they cannot foresee the 
+                    pain and trouble that are bound to ensue; and equal 
+                    blame belongs to those who fail in their duty.
+                </p>
+
+                <br />
+                @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="custom-heading">
+                        <h2>online driver application</h2>
+                    </div><!-- .custom-heading end -->
+
+                    <div class="wpcf7 driver-app-form clearfix">
+                        <!--  <h4>JobApplication</h4>
+                          <hr />-->
+                       
+                        <div class="title">
+                            <h3>[NOTE! Fields marked with <span style="color:#cc0101">(required)</span> sign are mandatory!]</h3>
+                        </div>
+                        <div class="title">
+                            <h3>Select the position you are applying for</h3>
+                        </div>
+                        
+                        <fieldset>
+                            @Html.LabelFor(model => model.JobPossitionId, new {@class="requiredField" })
+                            
+                            @Html.DropDownListFor(model => model.JobPossitionId, (SelectList)ViewBag.JobPossitions, new { @class = "wpcf7-select", @id="ddlJobPosition" })
+                            @Html.ValidationMessageFor(model => model.JobPossitionId, "", new { @class = "bg-danger" })
+                        </fieldset>
+                        </div>
+                        <div class="title">
+                            <h3>PERSONAL INFORMATION</h3>
+                        </div>
+                        <div class="wpcf7 driver-app-form clearfix">
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.FirstName, new { @class = "requiredField" })
+                                @Html.EditorFor(model => model.User.FirstName, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                @Html.ValidationMessageFor(model => model.User.FirstName, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.MiddleName, new { @class = "requiredField" })
+                                @Html.EditorFor(model => model.User.MiddleName, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                @Html.ValidationMessageFor(model => model.User.MiddleName, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.LastName, new { @class = "requiredField" })
+                                @Html.EditorFor(model => model.User.LastName, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                @Html.ValidationMessageFor(model => model.User.LastName, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.Telephone, new { @class = "requiredField" })
+                                @Html.EditorFor(model => model.User.Telephone, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                @Html.ValidationMessageFor(model => model.User.Telephone, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.Email, new { @class = "requiredField" })
+                                @Html.EditorFor(model => model.User.Email, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                @Html.ValidationMessageFor(model => model.User.Email, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.BirthDate, new { @class = "requiredField" })
+                              
+                                <div class="input-group-date date datepicker pointer">
+                                    @Html.EditorFor(model => model.User.BirthDate, new { htmlAttributes = new { @class = "wpcf7-text", @placeholder = "Please choose date" } })
+                                    <span class="input-group-addon">
+                                        <span class="fa fa-calendar"></span>
+                                    </span>
+                                </div>
+                                 
+                                        @Html.ValidationMessageFor(model => model.User.BirthDate, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.StreetAddress, new { @class = "requiredField" })
+                                @Html.EditorFor(model => model.User.StreetAddress, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                @Html.ValidationMessageFor(model => model.User.StreetAddress, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.City, new { @class = "requiredField" })
+                                @Html.EditorFor(model => model.User.City, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                @Html.ValidationMessageFor(model => model.User.City, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.StateId, new { @class = "requiredField" })
+                                @Html.DropDownListFor(model => model.User.StateId, (SelectList)ViewBag.StateId, new { @class = "wpcf7-select" })
+                                @Html.ValidationMessageFor(model => model.User.StateId, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.ZipCode, new { @class = "requiredField" })
+                                @Html.EditorFor(model => model.User.ZipCode, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                @Html.ValidationMessageFor(model => model.User.ZipCode, "", new { @class = "bg-danger" })
+                            </fieldset>
+
+                            <fieldset>
+                                @Html.LabelFor(model => model.User.SSNPhoto, new { @class = "requiredField" })
+                                <input id="SSNPhoto" type="file" placeholder="Choose File" name="SSNPhoto" class="wpcf7-text" required />
+                                @Html.ValidationMessageFor(model => model.User.SSNPhoto, "", new { @class = "bg-danger" })
+                            </fieldset>
+                            </div>
+                            <div class="title">
+                                <h3>CDL Information</h3>
+                            </div>
+                            <div class="wpcf7 driver-app-form clearfix">
+                                <fieldset>
+                                    @Html.LabelFor(model => model.CDLInformation.CDLNumber, new { @class = "requiredField" })
+                                    @Html.EditorFor(model => model.CDLInformation.CDLNumber, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                    @Html.ValidationMessageFor(model => model.CDLInformation.CDLNumber, "", new { @class = "bg-danger" })
+                                </fieldset>
+
+                                <fieldset>
+                                    @Html.LabelFor(model => model.CDLInformation.CDLStateId, new { @class = "requiredField" })
+                                    @Html.DropDownListFor(model => model.CDLInformation.CDLStateId, (SelectList)ViewBag.CDLStateId, new { @class = "wpcf7-select" })
+                                    @Html.ValidationMessageFor(model => model.CDLInformation.CDLStateId, "", new { @class = "bg-danger" })
+                                </fieldset>
+
+                                <fieldset>
+                                    @Html.LabelFor(model => model.CDLInformation.CDLSchoolAttended)
+                                    @Html.EditorFor(model => model.CDLInformation.CDLSchoolAttended, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                    @Html.ValidationMessageFor(model => model.CDLInformation.CDLSchoolAttended, "", new { @class = "bg-danger" })
+                                </fieldset>
+
+                                <fieldset>
+                                    @Html.LabelFor(model => model.CDLInformation.GraduationDate)
+                                    <div class="input-group-date date datepicker pointer">
+                                        @Html.EditorFor(model => model.CDLInformation.GraduationDate, new { htmlAttributes = new { @class = "wpcf7-text", @placeholder = "Please choose date" } })
+                                        <span class="input-group-addon">
+                                            <span class="fa fa-calendar"></span>
+                                        </span>
+                                    </div>
+                                    @Html.ValidationMessageFor(model => model.CDLInformation.GraduationDate, "", new { @class = "bg-danger" })
+                                </fieldset>
+
+                                <fieldset>
+                                    @Html.LabelFor(model => model.CDLInformation.PreviousCDL)
+                                    @Html.EditorFor(model => model.CDLInformation.PreviousCDL, new { htmlAttributes = new { @class = "wpcf7-select" } })
+                                    @Html.ValidationMessageFor(model => model.CDLInformation.PreviousCDL, "", new { @class = "bg-danger" })
+                                </fieldset>
+
+                                <fieldset>
+                                    @Html.LabelFor(model => model.CDLInformation.PreviousCDLNumber)
+                                    @Html.EditorFor(model => model.CDLInformation.PreviousCDLNumber, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                                    @Html.ValidationMessageFor(model => model.CDLInformation.PreviousCDLNumber, "", new { @class = "bg-danger" })
+                                </fieldset>
+
+                                <fieldset>
+                                    @Html.LabelFor(model => model.CDLInformation.CDLPhoto, new { @class = "requiredField" })
+                                    <input id="CDLPhoto" type="file" name="CDLPhoto" class="filestyle" required />
+                                    @Html.ValidationMessageFor(model => model.CDLInformation.CDLPhoto, "", new { @class = "bg-danger" })
+                                </fieldset>
+
+                                <fieldset>
+                                    @Html.LabelFor(model => model.CDLInformation.MedicalPhoto, new { @class = "requiredField" })
+                                    <input id="MedicalPhoto" name="MedicalPhoto" type="file" placeholder="Choose File" class="filestyle" required/>
+                                    @Html.ValidationMessageFor(model => model.CDLInformation.MedicalPhoto, "", new { @class = "bg-danger" })
+                                </fieldset>
+                            
+                            </div>
+                    <div class="custom-heading">
+                        <h2>WHAT TYPE OF EXPERIENCE DO YOU HAVE?</h2>
+                    </div><!-- .custom-heading end -->
+                    <div class="title">
+                        <h3>[You can select more than one type]</h3>
+                    </div>
+                    <div class="wpcf7 driver-app-form clearfix checkbox-wrapper">
+                        @{
+                            List<DSTrucking.Models.ExperienceViewModel> experiences = ViewBag.Experiences;
+                            int c = experiences.Count;
+                            for (int i=0; i < c; i++)
+                            {   
+                                <fieldset>
+                                    <div class="row row-reset row-eq-height">
+                                        <div class='col-xs-11 col-reset'>
+                                            <div class="border-left border-top border-bottom">
+                                                <div class="padding-all-7 ">
+                                                    <span>@experiences[i].ExperienceTypeName</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="col-xs-1 col-reset" >
+                                            <div>
+                                                <div class="border-right border-top border-bottom">
+                                                    <ul class="filters margin-top-10 margin-bottom-6 height-20">
+                                                        <li>
+                                                            <label>
+                                                                <input type="checkbox"
+                                                                        name="selectedExperiences"
+                                                                        value="@experiences[i].Id"
+                                                                        @(Html.Raw(experiences[i].IsChecked.GetValueOrDefault() ? "checked=\"checked\"" : "")) />
+                                                                <span class="icon"><i class="fa fa-check"></i></span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </fieldset>
+                            }
+                        }   
+                    </div>
+
+                    <div class="wpcf7 driver-app-form clearfix margin-bottom-20">
+                        <div class="custom-heading">
+                            <h2>@Html.LabelFor(model => model.AmountOfOTRExperienceId, new { @class = "requiredField" })</h2>
+                        </div>
+                        <fieldset>
+                            @Html.DropDownListFor(model => model.AmountOfOTRExperienceId, (SelectList)ViewBag.AmmountOfExperience, new { @class = "wpcf7-select", @paceholder="Choose one"})
+                            @Html.ValidationMessageFor(model => model.AmountOfOTRExperienceId, "", new { @class = "bg-danger" })
+                        </fieldset>
+                    </div>
+
+                    <div class="wpcf7 driver-app-form clearfix margin-bottom-20">
+                        <div id="addWorkHistoryContainer">
+                            @Html.Action("_WorkHistoryPartial", "WorkHistories", new { index = 0 })
+                        </div>
+                        <div class="margin-top-20">
+                            <input id="addWorkHistory" type="button" value="Add work history" class="wpcf7-submit" />
+                            <input id="cancelWorkHistory" style="display: none" type="button" value="Cancel" class="wpcf7-submit" />
+                        </div>
+                    </div>
+
+                    <div class="wpcf7 driver-app-form truckInfo-section clearfix margin-bottom-20">
+                        <div class="custom-heading">
+                            <h2>Truck info</h2>
+                        </div><!-- .custom-heading end -->
+
+                        <fieldset class="ownerOperatorFiedls">
+                            @Html.LabelFor(model => model.Make)
+                            @Html.EditorFor(model => model.Make, new { htmlAttributes = new { @class = "wpcf7-select" } })
+                            @Html.ValidationMessageFor(model => model.Make, "", new { @class = "bg-danger" })
+                        </fieldset>
+                        <fieldset class="ownerOperatorFiedls">
+                            @Html.LabelFor(model => model.Year)
+                            @Html.EditorFor(model => model.Year, new { htmlAttributes = new { @class = "wpcf7-select" } })
+                            @Html.ValidationMessageFor(model => model.Year, "", new { @class = "bg-danger" })
+                        </fieldset>
+                        <fieldset class="ownerOperatorFiedls">
+                            @Html.LabelFor(model => model.CompanyName)
+                            @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @class = "wpcf7-select" } })
+                            @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "bg-danger" })
+                        </fieldset>
+                    </div>
+                    <div class="wpcf7 driver-app-form clearfix margin-bottom-20">
+                        <fieldset>
+                            @Html.LabelFor(model => model.DateAvailableToStart)
+                            <div class="input-group-date date datepicker pointer">
+                                @Html.EditorFor(model => model.DateAvailableToStart, new { htmlAttributes = new { @class = "wpcf7-text", @placeholder = "Please choose date" } })
+                                <span class="input-group-addon">
+                                    <span class="fa fa-calendar"></span>
+                                </span>
+                            </div>
+
+                            @Html.ValidationMessageFor(model => model.DateAvailableToStart, "", new { @class = "bg-danger" })
+                        </fieldset>
+                        </div>
+                        <div class="custom-heading">
+                            <h2>Add Photo</h2>
+                        </div><!-- .custom-heading end -->
+
+                        <div class="wpcf7 driver-app-form margin-bottom-20">
+                            <fieldset>
+                                <input type="file" id="ImageFile" name="ImageFile" placeholder="Choose File" class="filestyle">
+                            </fieldset>
+                        </div>
+                        <div class="wpcf7 driver-app-form clearfix margin-bottom-20">
+                            <input type="submit" value="Create" class="wpcf7-submit" />
+                        </div>
+                        @Html.HiddenFor(model => model.Id)
+                            @Html.HiddenFor(model => model.User.Id)
+                            @Html.HiddenFor(model => model.CDLInformation.Id)
+                           
+                           
+                            }
+                    </div>
+
+            
+        </div>
+    </div>
+</div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        
+        <script type="text/javascript">
+            $("#addWorkHistory").on('click', function () {
+                var index = $('#addWorkHistoryContainer').find('.indexCount').length; //calculate index for binding
+                $.ajax({
+                    type: "GET",
+                    url: '/WorkHistories/_WorkHistoryPartial?index=' + index
+                })
+                .success(function (partialView) {
+                    $('#addWorkHistoryContainer').append(partialView);
+                    $('#cancelWorkHistory').css('display', 'block');
+                })
+                .error(console.log);
+            });
+            $("#cancelWorkHistory").on('click', function () {
+                $('#addWorkHistoryContainer').children("div[class=indexCount]:last").remove();
+                $('#cancelWorkHistory').css('display', 'none');
+            })
+            $('#ddlJobPosition').on('change', function () {
+                var text = $("#ddlJobPosition :selected").text();
+                if (text == 'Owner Operator') {
+                    $('.truckInfo-section').css('display', 'block');
+                }
+                else {
+                    $('.truckInfo-section').css('display', 'none');
+                }
+            })
+
+            $('.datepicker').datepicker({
+                autoclose: true,
+                todayHighlight: true,
+                format: "dd-MM-yyyy"
+            });
+            //$.datepicker.setDefaults($.datepicker.regional["us"]);
+            $(":file").filestyle({buttonName: "btn-primary"});
+              </script>
+    }
+
+<style>
+.truckInfo-section{
+    display: none;
+}
+
+.title h3{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.input-group-date{
+    display: table;
+}
+.datepicker{
+    padding: 0 !important;
+}
+.input-group-date input{
+        border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+}
+    @@media only screen and (max-width: 479px) and (min-width: 320px) {
+        .page-content *[class*="col-"], aside *[class*="col-"], *[class*="col-"].footer-widget-container {
+            margin-bottom: 0 !important;
+        }
+    }
+    label.requiredField:after {
+    content: " (required)";
+    font-size: 10px;
+    color: #cc0101;
+}
+
+
+</style>

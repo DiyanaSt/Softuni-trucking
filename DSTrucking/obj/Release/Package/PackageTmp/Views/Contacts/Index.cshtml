@@ -1,0 +1,134 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+  
+}
+
+<div class="page-title-style01 page-title-negative-top pt-bkg03">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Contact us</h1>
+            </div><!-- .col-md-12 end -->
+        </div><!-- .row end -->
+    </div><!-- .container end -->
+</div><!-- .page-title-style01.page-title-negative-top end -->
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            @*@if (isMessageSendSuccessfull == true)
+            {
+                
+            }*@
+            
+        @if (TempData["success"] != null)
+        {
+            <div class="successMessage alert alert-success">
+                <a href="#" class="close" data-dismiss="alert">×</a><strong>Success!</strong> Your message has been sent successfully.
+            </div>
+        }
+                    <div class="col-md-6">
+
+                        <div class="custom-heading">
+                            <h4>company information</h4>
+                        </div><!-- .custom-heading end -->
+                        <address>
+                            2300 E Higgins Rd, <br />
+                            Elk Grove Village, Chicago
+                        </address>
+                        <span class="text-big">
+                            +1 312 801  5470, <br /> +1 617 372 4449
+                        </span>
+                        <br />
+                        <a href="mailto:">displatch@dslogistics.us</a>
+                    </div><!-- .col-md-6 end -->
+
+                    <div class="col-md-6">
+                        <!-- .contact form start -->
+                        <div class="custom-heading">
+                            <h3>Send us a message</h3>
+                        </div><!-- .custom-heading end -->
+                        <form class="wpcf7 clearfix">
+                            <fieldset>
+                                <label>
+                                    <span class="required">*</span> Your request:
+                                </label>
+                                <input type="text" class="wpcf7-text" required id="subject">
+                            </fieldset>
+                            <fieldset>
+                                <label>
+                                    <span class="required">*</span> First Name:
+                                </label>
+                                <input type="text" class="wpcf7-text" required id="contact-name">
+                            </fieldset>
+                            <fieldset>
+                                <label>
+                                    <span class="required">*</span> Last Name:
+                                </label>
+                                <input type="text" class="wpcf7-text" required id="contact-last-name">
+                            </fieldset>
+                            <fieldset>
+                                <label>
+                                    <span class="required">*</span> Email:
+                                </label>
+                                <input type="email" class="wpcf7-text" required id="contact-email">
+                            </fieldset>
+                            <fieldset>
+                                <label>
+                                    <span class="required">*</span> Message:
+                                </label>
+                                <textarea rows="8" class="wpcf7-textarea" required id="contact-message"></textarea>
+                            </fieldset>
+                            <div id="lblMessage" style="display: none;"></div>
+                            <input id="btnSendEmail" type="button" class="wpcf7-submit" value="send" />
+                        </form><!-- .wpcf7 end -->
+
+                    </div><!-- .col-md-6 end -->
+                </div><!-- .row end -->
+                @*<div class="row">
+                    <div class="col-md-12">
+                        <div class="custom-heading">
+                            <h3>Where to find us</h3>
+                        </div> .custom-heading end
+                        <div id="googleMap"></div>
+                    </div>
+                </div>*@
+            </div><!-- .container end -->
+        </div><!-- .page-content end -->
+
+<script>
+    $('#btnSendEmail').click(function () {
+        debugger;
+        var request = $('#subject').val();
+        var firstName = $('#contact-name').val();
+        var lastName = $('#contact-last-name').val();
+        var email = $('#contact-email').val();
+        var message = $('#contact-message').val();
+        $.ajax({
+            type: "POST",
+            url: "/Contacts/SendContactForm",
+            data: {
+                request: request,
+                firstName: firstName,
+                lastName: lastName,
+                email: email,
+                message: message
+            },
+            success: function (data) {
+                window.location.href = data;
+            }
+        })
+    })
+
+    //function myMap() {
+    //    var uluru = { lat: 42.012048, lng: -87.9471197 };
+    //    var map = new google.maps.Map(document.getElementById('googleMap'), {
+    //      zoom: 14,
+    //      center: uluru
+    //    });
+    //    var marker = new google.maps.Marker({
+    //      position: uluru,
+    //      map: map
+    //    });
+    //}
+</script>
+@*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXAVXWQMYAfzpOlT2yZ7zFpJUp5qR-CC0&callback=myMap"></script>*@

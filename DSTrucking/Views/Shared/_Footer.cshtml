@@ -1,0 +1,99 @@
+﻿<div id="footer-wrapper" class="footer-dark">
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <ul class="col-md-3 col-sm-6 footer-widget-container clearfix">
+                    <!-- .widget.widget_text -->
+                    <li class="widget widget_newsletterwidget">
+                        <div class="title">
+                            <h3>newsletter subscribe</h3>
+                        </div>
+                        <p>
+                            Subscribe to our newsletter and we will
+                            inform you about newest projects and promotions.
+                        </p>
+                        <br />
+                        <form class="newsletter">
+                            <input id="emailToSave" class="email" type="email" placeholder="Your email...">
+                            <input id="btnNewsLetter" type="submit" class="submit" value="">
+                        </form>
+                    </li><!-- .widget.widget_newsletterwidget end -->
+                </ul><!-- .col-md-3.footer-widget-container end -->
+                <ul class="col-md-2 col-sm-6 footer-widget-container">
+                    <!-- .widget-pages start -->
+                    <li class="widget widget_pages">
+                        <div class="title">
+                            <h3>quick links</h3>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="../home">Home</a>
+                            </li>
+                            <li>
+                                <a href="../about">About</a>
+                            </li><!-- .dropdown end -->
+
+                            <li>
+                                <a href="../jobapplications/create">Driver Application</a>
+                            </li><!-- .dropdown end -->
+                            <li>
+                                <a href="../contacts">Contact</a>
+                            </li><!-- .dropdown end -->
+                        </ul>
+                    </li><!-- .widget-pages end -->
+                </ul><!-- .col-md-4.footer-widget-container end -->               
+                <ul class="col-md-4 col-sm-4 footer-widget-container">
+                    <li class="widget widget-text">
+                       <div id="googleMap-footer"></div>
+                    </li><!-- .widget.widget-text end -->
+                </ul><!-- .col-md-4.footer-widget-container end -->
+                 <ul class="col-md-2 col-sm-6 footer-widget-container">
+                    <li class="widget widget-text">
+                        <div class="title">
+                            <h3>contact us</h3>
+                        </div>
+                        <address>
+                            2300 E Higgins Rd, <br />
+                            Elk Grove Village, Chicago
+                        </address>
+                        <span class="text-big">
+                            +1 312 801  5470,<br /> +1 617 372 4449
+                        </span>
+                        <br />
+                        <a href="mailto:">displatch@dslogistics.us</a>
+                        <br />
+                        <ul class="footer-social-icons">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                        </ul><!-- .footer-social-icons end -->
+                    </li><!-- .widget.widget-text end -->
+                </ul><!-- .col-md-4.footer-widget-container end -->
+            </div><!-- .row end -->
+        </div><!-- .container end -->
+    </footer><!-- #footer end -->
+    <a href="#" class="scroll-up">Scroll</a>
+</div>
+
+<script>
+    $("#btnNewsLetter").on('click', function () {
+        var email = $('#emailToSave').val();
+        $.ajax({
+            type: "POST",
+            url: "/NewsLetterEmail/SaveEmailToDb",
+            data: {
+                email: email
+            }
+        })
+    })
+    function myMap() {
+        var uluru = { lat: 42.012048, lng: -87.9471197 };
+        var map = new google.maps.Map(document.getElementById('googleMap-footer'), {
+          zoom: 14,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXAVXWQMYAfzpOlT2yZ7zFpJUp5qR-CC0&callback=myMap"></script>

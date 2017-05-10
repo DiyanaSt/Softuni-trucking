@@ -1,0 +1,153 @@
+﻿@model IEnumerable<DSTrucking.Models.JobPossitionViewModel>
+@using GridMvc.Html
+
+@{
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+}
+<div class="page-title-style01 page-title-negative-top pt-bkg15">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Job Possitions</h1>
+
+            </div><!-- .col-md-12 end -->
+        </div><!-- .row end -->
+    </div><!-- .container end -->
+</div><!-- .page-title-style01.page-title-negative-top end -->
+
+<div class="container job-application-wrapper-table margin-bottom-40">
+    <div class="wpcf7 driver-app-form clearfix margin-bottom-20">
+        @Html.ActionLink("Create new", "Create", null, new { @class = "wpcf7-submit" })
+
+    </div>
+    
+ 
+    <div class="row">
+        <div class="col-xs-12">
+            @Html.Grid(Model).Columns(columns =>
+           {
+
+               columns.Add(c => c.Name).Titled("Position").Filterable(true);
+               columns.Add(c => c.Description).Titled("Description").Filterable(true);
+               columns.Add(c => c.FromDate).Titled("From Date").Format("{0:dd/MM/yyyy}");
+               columns.Add(c => c.ToDate).Titled("To Date").Format("{0:dd/MM/yyyy}");
+               columns.Add(c => c.OpenedPositions).Titled("Opened Positions").Filterable(true);
+               columns.Add(c => c.City).Titled("City").Encoded(false).Sanitized(false);
+               columns.Add()
+                       .Encoded(false)
+                       .Sanitized(false)
+                       .RenderValueAs(o => Html.ActionLink("Details", "Details", new { id = o.Id })).SetWidth(30);
+               columns.Add()
+                        .RenderValueAs(o => Html.Raw($"<a href='#' type='button' id='deleteItem' class='deleteItem' data-toggle='modal' data-target='#confirm-delete' data-id='{o.Id}'>Delete</a>")).SetWidth(30)
+
+                             .Encoded(false)
+                           .Sanitized(false);
+
+           }).WithPaging(10).Sortable(true)
+
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+        function confirm(heading, question, cancelButtonTxt, okButtonTxt, id) {
+
+            var confirmModal =
+              $('<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">' +
+                '<div class="modal-dialog"  role="document"><div class="modal-content">' +
+                  '<div class="modal-header">' +
+                    '<a class="close" data-dismiss="modal" >&times;</a>' +
+                    '<h3>' + heading + '</h3>' +
+                  '</div>' +
+
+                  '<div class="modal-body">' +
+                    '<p>' + question + '</p>' +
+                  '</div>' +
+
+                  '<div class="modal-footer">' +
+                    '<a href="#" class="wpcf7-submit" data-dismiss="modal">' +
+                      cancelButtonTxt +
+                    '</a>' +
+                    '<a href="javascript:void(0)" id="okButton" class="wpcf7-submit">' +
+                      okButtonTxt +
+                    '</a>' +
+                  '</div>' +
+                   '</div>' +
+                    '</div>' +
+                '</div>');
+
+            confirmModal.find('#okButton').click(function (event) {
+
+
+                $.ajax({
+                    type: "POST",
+                    url: "/JobPossitions/DeleteConfirmed",
+                    data: {
+                        id: id
+                    },
+                    success: function (result) {
+                 
+                        if (result == "OK") {
+                            confirmModal.modal('hide');
+                            window.location.href = "/jobpossitions"
+                        }
+
+                    }
+                });
+
+
+            });
+
+            confirmModal.modal('show');
+            confirmModal.children().first().css('z-index', '0');
+        };
+
+        // ---------------------------------------------------------- Confirm Put To Use
+
+        $(".deleteItem").on("click", function (event) {
+            // get txn id from current table row
+            var id = $(this).data('id');
+
+            var heading = 'Confirm Delete';
+            var question = 'Please confirm that you wish to delete this record';
+            var cancelButtonTxt = 'Cancel';
+            var okButtonTxt = 'Confirm';
+
+
+
+            confirm(heading, question, cancelButtonTxt, okButtonTxt, id);
+
+        });
+</script>
+<style>
+    .wpcf7-submit {
+        padding: 8px 20px;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 25px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 25px;
+        color: #fff;
+        background-color: #006db7;
+        margin-right: 5px;
+        -webkit-transition: all 0.2s ease 0s;
+        -moz-transition: all 0.2s ease 0s;
+        -o-transition: all 0.2s ease 0s;
+        -ms-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s;
+    }
+</style>
+
+

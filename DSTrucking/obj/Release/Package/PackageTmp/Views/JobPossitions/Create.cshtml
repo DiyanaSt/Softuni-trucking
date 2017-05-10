@@ -1,0 +1,126 @@
+﻿@model  DSTrucking.Models.JobPossitionViewModel
+
+@{
+    ViewBag.Title = "Create";
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
+<div class="page-title-style01 page-title-negative-top pt-bkg15">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Create possition</h1>
+
+            </div><!-- .col-md-12 end -->
+        </div><!-- .row end -->
+    </div><!-- .container end -->
+</div><!-- .page-title-style01.page-title-negative-top end -->
+
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                
+                <div class="wpcf7 driver-app-form clearfix">
+                    <!--  <h4>JobApplication</h4>
+                      <hr />-->
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <fieldset>
+                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                    </fieldset>
+
+                    <fieldset>
+                        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+
+                    </fieldset>
+
+                    <fieldset>
+                        @Html.LabelFor(model => model.FromDate, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.FromDate, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.FromDate, "", new { @class = "text-danger" })
+
+                    </fieldset>
+
+                    <fieldset>
+                        @Html.LabelFor(model => model.ToDate, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.ToDate, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.ToDate, "", new { @class = "text-danger" })
+
+                    </fieldset>
+
+                    <fieldset>
+                        @Html.LabelFor(model => model.OpenedPositions, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.OpenedPositions, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.OpenedPositions, "", new { @class = "text-danger" })
+
+                    </fieldset>
+                    <fieldset>
+                        @Html.LabelFor(model => model.StateId, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.DropDownListFor(model => model.StateId, (SelectList)ViewBag.StateId, new { @class = "wpcf7-select" })
+                        @Html.ValidationMessageFor(model => model.StateId, "", new { @class = "text-danger" })
+                    </fieldset>
+
+
+                    <fieldset>
+                        @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-md-2" })
+
+                        @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "wpcf7-text" } })
+                        @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                    </fieldset>
+
+                    <div class="col-xs-4">
+                        <div class="row row-reset">
+                            <div class='col-xs-11 col-reset'>
+                                <div class="border-left border-top padding-all-18 margin-bottom-20 border-bottom">
+                                    <span>Is Active</span>
+                                </div>
+                            </div>
+                            <div class="col-xs-1 col-reset">
+                                <div class="border-right border-top margin-bottom-20 border-bottom">
+                                    <ul class="filters margin-top-20">
+                                        <li>
+                                            <label>
+                                                <input type="checkbox"
+                                                       name="isActive"
+                                                       value="@Model.IsActive"
+                                                       @(Html.Raw(Model.IsActive.GetValueOrDefault() ? "checked=\"checked\"" : "")) />
+                                                <span class="icon"><i class="fa fa-check"></i></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wpcf7 driver-app-form clearfix margin-bottom-20">
+                        <input type="submit" value="Create" class="wpcf7-submit" />
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </div>
+            <div>
+                @Html.ActionLink("Back to List", "Index")
+            </div>

@@ -1,0 +1,415 @@
+﻿@model DSTrucking.Models.JobApplicationViewModel
+
+@{
+    if (User.IsInRole("Admin"))
+    {
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
+<!--TODO: fix borders in work history container-->
+<div class="container job-application-wrapper-table margin-bottom-40">
+    <div class="row margin-top-160">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-12">
+            <div class="row row-reset">
+                <div class="col-xs-12 col-reset">
+                    <div class="padding-all-13 border-top border-left border-right f-center f-bolder">
+                        @{ 
+                            string possitionName = string.Empty;
+                            using (DSContext context = new DSContext())
+                            {
+                                var jobPossition = context.JobPossitions.Find(Model.JobPossitionId);
+
+                                if (jobPossition != null)
+                                {
+                                    possitionName = jobPossition.Name;
+                                }
+                            }
+
+                        }
+                        Candidate info / Job Possition: @possitionName
+                    </div>
+                </div>
+            </div>
+            <div class="row row-eq-height row-reset">
+                <div class="col-xs-6 col-reset border-top border-left">    
+                       <div class="padding-all-13 ">
+                           Candidate Photo
+                       </div>
+                </div>
+                <div class="col-xs-6 col-reset border-top border-left border-right">
+                    <div class="padding-all-13">
+                        @{ 
+                            string imageDataURL = string.Format("data:image/png;base64,{0}", Model.CandidateCvImage);
+                        }
+                        <img src="@imageDataURL"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.FirstName)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.FirstName)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.LastName)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.LastName)
+                    </div>
+                </div>
+            </div>
+          
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.Telephone)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.Telephone)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.Email)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.Email)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.StreetAddress)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.StreetAddress)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.City)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.City)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.ZipCode)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.ZipCode)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.BirthDate)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.BirthDate)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.State.Name)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.State.Name)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.User.MiddleName)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.User.MiddleName)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-eq-height row-reset">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13 ">
+                        SSN Photo
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-top border-left border-right">
+                    <div class="padding-all-13">
+                        @{
+                            string ssnPhotoDataURL = string.Format("data:image/png;base64,{0}", Model.User.SSNPhoto);
+                        }
+                        <img src="@ssnPhotoDataURL" />
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.CDLInformation.CDLNumber)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-top border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayFor(model => model.CDLInformation.CDLNumber)
+                    </div>
+                </div>
+            </div>
+            <div class="row row-eq-height row-reset">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13 ">
+                        SDL Photo
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-top border-left border-right">
+                    <div class="padding-all-13">
+                        @{
+                            string sdlPhotoDataURL = string.Format("data:image/png;base64,{0}", Model.CDLInformation.CDLPhoto);
+                        }
+                        <img src="@sdlPhotoDataURL" />
+                    </div>
+                </div>
+            </div>
+            <div class="row row-eq-height row-reset">
+                <div class="col-xs-6 col-reset border-top border-left">
+                    <div class="padding-all-13 ">
+                        Medical Photo
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-top border-left border-right">
+                    <div class="padding-all-13">
+                        @{
+                            string medicalPhotoDataURL = string.Format("data:image/png;base64,{0}", Model.CDLInformation.MedicalPhoto);
+                        }
+                        <img src="@medicalPhotoDataURL" />
+                    </div>
+                </div>
+            </div>
+             <div class="row row-reset row-eq-height">
+                 <div class="col-xs-6 col-reset border-top border-left">
+                     <div class="padding-all-13">
+                         Experiences Type
+                     </div>
+                 </div>
+                 <div class="col-xs-6 col-reset border-top border-left border-right">
+                     <div class="padding-all-13">
+                         @if (Model.Experiences.Count != 0)
+                         {
+                             @Html.DisplayFor(model => string.Join(", ", Model.Experiences.Select(s => s.ExperienceTypeName)))
+                         }
+                     </div>
+                 </div>
+            </div>
+            <div class="row row-reset row-eq-height">
+                <div class="col-xs-6 col-reset border-top border-bottom border-left">
+                    <div class="padding-all-13">
+                        @Html.DisplayNameFor(model => model.AmountOfOTRExperienceId)
+                    </div>
+                </div>
+                <div class="col-xs-6 col-reset border-right border-bottom border-top border-left">
+                    <div class="padding-all-13">
+                        @if (Model.AmountOfOTRExperience != null)
+                        {
+                            @Html.DisplayFor(model => model.AmountOfOTRExperience.TimePeriod)
+                        }
+
+                    </div>
+                </div>
+            </div>
+            <div class="row row-reset row-eq-height margin-top-20">
+                <div class="col-xs-12 col-reset border-right border-top border-bottom border-left">
+                    <div class="padding-all-13 f-center f-bolder">
+                        Work history
+                    </div>
+                </div>
+            </div>
+            @foreach (var workHistory in Model.WorkHistory)
+            {
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-bottom border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayNameFor(w => workHistory.CompanyName)
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-bottom border-right border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayFor(w => workHistory.CompanyName)
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-bottom border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayNameFor(w => workHistory.City)
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-bottom border-right border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayFor(w => workHistory.City)
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-bottom border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayNameFor(w => workHistory.State)
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-bottom border-right border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayFor(w => workHistory.State)
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-bottom border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayNameFor(w => workHistory.ContactPhone)
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-bottom border-right border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayFor(w => workHistory.ContactPhone)
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-bottom border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayNameFor(w => workHistory.PositionHeld)
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-bottom border-right border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayFor(w => workHistory.PositionHeld)
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-bottom border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayNameFor(w => workHistory.ReasonsForLiving)
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-bottom border-right border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayFor(w => workHistory.ReasonsForLiving)
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-bottom border-top border-left bg-blue">
+                        <div class="padding-all-13">
+                           <span class="padding-all-1"></span>           
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-bottom border-right border-top bg-blue">
+                        <div class="padding-all-13">
+                            <span class="padding-all-1"></span>           
+                        </div>
+                    </div>
+                </div>
+                
+            }
+            @if (possitionName == "Driver2")
+            {
+                <div class="row row-reset row-eq-height margin-top-20">
+                    <div class="col-xs-12 col-reset border-right border-top border-bottom border-left">
+                        <div class="padding-all-13 f-center f-bolder">
+                            Truck information
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayNameFor(model => model.Make)
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-right border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayFor(model => model.Make)
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayNameFor(model => model.Year)
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-right border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayFor(model => model.Year)
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-reset row-eq-height">
+                    <div class="col-xs-6 col-reset border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayNameFor(model => model.CompanyName)
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-reset border-right border-top border-left">
+                        <div class="padding-all-13">
+                            @Html.DisplayFor(model => model.CompanyName)
+                        </div>
+                    </div>
+                </div>
+            }
+             <div class="row row-reset margin-top-20">
+                <div class="col-xs-12 col-reset">
+                    <div class="f-right wpcf7 driver-app-form driver-details-button clearfix">
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-xs-1"></div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+﻿@model DSTrucking.Models.ExperienceViewModel
+
+@Html.HiddenFor(x => x.Id)
+@Html.CheckBoxFor(x => x.IsChecked.Value)
+@Html.LabelFor(x => x.IsChecked, Model.ExperienceTypeName)
+<br />
+

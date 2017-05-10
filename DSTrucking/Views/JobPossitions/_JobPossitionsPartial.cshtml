@@ -1,0 +1,59 @@
+﻿@model IEnumerable<DSTrucking.Models.JobPossitionViewModel>
+<div class="page-title-style01 page-title-negative-top pt-bkg15">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Job Possitions</h1>
+
+            </div><!-- .col-md-12 end -->
+        </div><!-- .row end -->
+    </div><!-- .container end -->
+</div><!-- .page-title-style01.page-title-negative-top end -->
+
+<div class="container job-application-wrapper-table margin-bottom-40">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="custom-heading">
+                <h3>opened positions</h3>
+            </div><!-- .custom-heading end -->
+            <div class="accordion careers">
+                @{
+                    var classActive = string.Empty;
+                    var count = 0;
+                    var firstCount = 1;
+                }
+                @foreach (var possition in Model)
+                {
+                    count++;
+                    if (firstCount == count)
+                    {
+                        classActive = "active";
+                    }
+
+                    <div class="title @classActive">
+                        <a href='#' class="clearfix">
+                            <span class='job-position'>@possition.Name</span>
+                            <span class='job-place'>@possition.City</span>
+                            <span class='job-end-date'>END DATE: @possition.ToDate.GetValueOrDefault()</span>
+                        </a>
+                    </div><!-- .title end -->
+                    <div class="content clearfix">
+                        <h4>Job summary</h4>
+                        <p>
+                            @possition.Description
+                        </p>
+                        <br />
+                        <a class="btn btn-big" href="/jobapplications/create">
+                            <span>
+                                Apply for this job
+                            </span>
+                        </a>
+                    </div><!-- .content end -->
+                }
+
+
+            </div><!-- .accordion.careers end -->
+        </div>
+    </div>
+</div>
